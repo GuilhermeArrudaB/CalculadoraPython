@@ -1,0 +1,44 @@
+def calculadora():
+    print("-"*30)
+    print("1 - Soma")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+    escolha = int(input("Escolha qual operação deseja fazer: "))
+    print("-"*30)
+
+    if escolha == 1:
+        numSoma1 = int(input("Qual número deseja somar?"))
+        numSoma2 = int(input("Qual o outro número que deseja somar?"))
+        print("{} + {} = {}".format(numSoma1, numSoma2, numSoma1 + numSoma2))
+        print("")
+        calculadora()
+
+    elif escolha == 2:
+        numSub1 = int(input("Qual número deseja subtrair?"))
+        numSub2 = int(input("Qual o outro número que deseja subtrair?"))
+        print("{} + {} = {}".format(numSub1, numSub2, numSub1 - numSub2))
+        print("")
+        calculadora()
+
+    elif escolha == 3:
+        numMult1 = int(input("Qual número deseja multiplicar?"))
+        numMult2 = int(input("Qual o outro número que deseja multiplicar?"))
+        print("{} X {} = {}".format(numMult1, numMult2, numMult1 * numMult2))
+        print("")
+        calculadora()
+
+    elif escolha == 4:
+        numDiv1 = int(input("Qual número deseja dividir?"))
+        numDiv2 = int(input("Qual o outro número que deseja dividir?"))
+        print("{} / {} = {}".format(numDiv1, numDiv2, numDiv1 / numDiv2))
+        print("")
+        calculadora()
+
+    else:
+        print("")
+        print("Opção inválida, por favor escolha uma válida")
+        print("")
+
+calculadora()
+ 
